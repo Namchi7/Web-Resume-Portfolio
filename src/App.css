@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: center;
+  gap: 1rem;
 }
 
 .App-logo {
@@ -35,4 +41,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }

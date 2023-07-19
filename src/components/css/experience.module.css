@@ -1,0 +1,193 @@
+.container {
+    width: 95%;
+    max-width: 65rem;
+    min-height: calc(100vh - 13rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading {
+    width: 100%;
+    color: #0074FF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.xpHeading {
+    color: rgb(255, 51, 51);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.xpInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.xpShortInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.shortLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.companyLogo {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    margin-right: 5rem;
+}
+
+.responsibilities, .learnings, .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.resHead, .learnHead, .skillHead {
+    width: 20%;
+}
+
+.resList, .learnList, .skillList {
+    width: 80%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+li {
+    list-style: inside circle;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background-color: rgb(201, 220, 204);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.skillRow1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.skillName {
+    font-weight: 600;
+}
+
+.skillLevel {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.25rem;
+    padding: 0.25rem;
+    border-radius: 2rem;
+    background-color: rgb(159, 170, 226);
+}
+
+.level {
+    height: 1rem;
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    border-radius: 1rem;
+    /* background-color: rgb(255, 205, 107); */
+}
+
+@media screen and (max-width: 700px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .xpHeading {
+        font-size: 1.25rem;
+    }
+    
+    .companyLogo {
+        width: 3.5rem;
+        margin: 0;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 1.25rem;
+    }
+
+    .xpHeading {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        min-height: calc(100vh - 21.5rem);
+    }
+
+    .xpInfo {
+        font-size: 0.8rem;
+    }
+
+    .shortLeft {        
+        order: 2;
+    }
+
+    .companyLogo {
+        width: 3rem;
+    }
+
+    .responsibilities, .learnings, .skills {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .resHead, .learnHead, .skillHead {
+        width: 100%;
+    }
+    
+    .resList, .learnList, .skillList {
+        width: 100%;
+    }
+}

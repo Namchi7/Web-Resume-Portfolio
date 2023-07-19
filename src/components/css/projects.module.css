@@ -1,0 +1,164 @@
+.container {
+    width: 95%;
+    max-width: 65rem;
+    min-height: calc(100vh - 13rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading {
+    width: 100%;
+    color: #0074FF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to left, rgba(229, 243, 255, 0.5), transparent 50%);
+    border-radius: 0.5rem;
+}
+
+.project:nth-child(2n + 1) {
+    background: linear-gradient(to left, transparent 50%, rgba(229, 243, 255, 0.5));
+}
+
+.project:nth-child(2n + 1) > .projectImg {
+    order: 2;
+}
+
+.projectImg {
+    height: auto;
+    width: 50%;
+    aspect-ratio: 12/8;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
+.projectInfo {
+    width: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(255, 51, 51);
+    text-transform: capitalize;
+}
+
+.projectLinks {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.siteLink {
+    height: 1rem;
+}
+
+.techUsed {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.techIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.techIconContainer {
+    position: relative;
+    overflow: visible;
+}
+
+.techIconContainer:hover::after {
+    width: max-content;
+    content: attr(data-tech-name);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #333;
+    font-size: 0.7rem;
+}
+
+.techIcon {
+    height: 1.15rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+}
+
+.projectShortInfo {
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .projectInfo {
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 1.25rem;
+    }
+    
+    .container {
+        min-height: calc(100vh - 21.5rem);
+    }
+
+    .project {
+        flex-direction: column;
+        background: linear-gradient(to bottom, transparent 50%, rgba(229, 243, 255, 0.5))
+    }
+
+    .project:nth-child(2n + 1) {
+        background: linear-gradient(to bottom, transparent 50%, rgba(229, 243, 255, 0.5))
+    }
+
+    .projectImg {
+        width: 100%;
+    }
+
+    .projectInfo {
+        width: 100%;
+        order: 2;
+    }
+}

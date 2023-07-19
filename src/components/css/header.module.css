@@ -1,0 +1,148 @@
+.container {
+    width: 100%;
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(63, 166, 255); */
+    box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
+    z-index: 12;
+}
+
+.subContainer {
+    width: 95%;
+    /* max-width: 80rem; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.navLinks {
+    width: 45%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.menuIcon {
+    display: none;
+    height: 2rem;
+}
+
+.menuIcon:hover {
+    cursor: pointer;
+}
+
+.sideBar {
+    transform: translateX(-100%);
+    position: fixed;
+    width: 85%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    z-index: 15;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.sideBar.open {
+    animation-name: drawer-open;
+}
+  
+.sideBar.close {
+    animation-name: drawer-close;
+}
+
+@keyframes drawer-open {
+    from {
+        transform: translateX(-100%);
+        /* width: 0; */
+    }
+    to {
+        transform: translateX(0);
+        /* width: 85%; */
+    }
+}
+
+@keyframes drawer-close {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 14;
+}
+
+.closeIcon {
+    height: 3rem;
+    margin: 2rem;
+}
+
+.closeIcon:hover {
+    cursor: pointer;
+}
+
+.sideNavLinks {
+    font-size: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* a:hover {
+    color: rgb(108, 108, 108);
+} */
+
+@media screen and (max-width: 850px) {
+    .navLinks {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .navLinks {
+        display: none
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .sideBar {
+        display: flex;
+    }
+}

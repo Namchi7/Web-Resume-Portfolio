@@ -1,0 +1,131 @@
+.container {
+    width: 95%;
+    max-width: 65rem;
+    min-height: calc(100vh - 13.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.name {
+    font-family: ProximaNova, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(67, 124, 2050), rgb(69, 214, 202));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* -webkit-text-stroke: 1px white; */
+}
+
+.aboutHead {
+    width: 75%;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.aboutInfo {
+    width: 75%;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    color: white;
+    border-radius: 0.3rem;
+    height: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+}
+
+.icon {
+    height: 1.25rem;
+}
+
+.linkText {
+    width: 5rem;
+    height: 100%;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linkText > span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+
+.linkedIn {
+    background-color: #004992;
+}
+
+.linkedIn > .linkText {
+    background-color: #005FBE;
+    display: flex;
+    justify-content: center;
+}
+
+.github {
+    background-color: #171717;
+}
+
+.github > .linkText {
+    background-color: #2B2B2B;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        min-height: calc(100vh - 21.5rem);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .aboutHead {
+        width: 95% ;
+        font-size: 0.9rem;
+    }
+
+    .aboutInfo {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .sns {
+        /* flex-direction: column; */
+        gap: 1rem;
+    }
+}

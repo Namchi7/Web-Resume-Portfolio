@@ -1,0 +1,542 @@
+.container {
+    width: 95%;
+    max-width: 65rem;
+    min-height: calc(100vh - 12rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.landingView {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.introContainer {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 0.8rem; */
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.roles {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.imgContainer {
+    position: relative;
+    width: 75%;
+    max-width: 18rem;
+    max-height: 18rem;
+    aspect-ratio: 1/1;
+    /* border: 1px solid black; */
+    /* background-color: rgba(240, 248, 255, 0.299); */
+}
+
+.image {
+    position: absolute;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    max-width: 17rem;
+    max-height: 17rem;
+    bottom: 0;
+    left: 0;
+    /* margin-top: 1rem;
+    margin-left: 0; */
+    border-radius: 50%;
+    background-color: rgb(255, 212, 243);
+    box-shadow: 5px -5px 4px 10px rgba(169, 200, 237, 0.25);
+    z-index: 5;
+    overflow: hidden;
+    animation: image 0.5s forwards ease-out;
+}
+
+@keyframes image {
+    from {
+        left: 0.5rem;
+        bottom: 0.5rem;
+    }
+    to {
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.dp {
+    width: 100%;
+}
+
+.imageBG {
+    position: absolute;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    max-width: 17rem;
+    max-height: 17rem;
+    top: 0;
+    right: 0;
+    /* margin-top: 0;
+    margin-left: 1rem; */
+    border-radius: 50%;
+    background-color: rgb(169, 200, 237);
+    z-index: 4;
+    animation: imageBG 0.5s forwards ease-out;
+}
+
+@keyframes imageBG {
+    from {
+        right: 0.5rem;
+        top: 0.5rem;
+    }
+    to {
+        right: 0;
+        top: 0;
+    }
+}
+
+.skillSet {
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+hr {
+    height: 2rem;
+    width: 2px;
+    background-color: black;
+}
+
+.skillIconContainer {
+    position: relative;
+    overflow: visible;
+}
+
+.skillIconContainer:hover::after {
+    width: max-content;
+    content: attr(data-skill-name);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateX(-25%);
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #333;
+    font-size: 0.7rem;
+}
+
+.skillIcons {
+    height: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skillIcon {
+    position: relative;
+    height: 2rem;
+}
+
+.downloadContainer {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(169, 200, 237, 0.25);
+}
+
+.downloadContainer:hover::after {
+    content: attr(data-dl);
+    position: absolute;
+    top: 100%;
+    margin-top: 0.25rem;
+    width: max-content;
+    padding: 0.25rem;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+}
+
+.downloadIcon {
+    width: 1rem;
+}
+
+.downloadContainer:hover {
+    background-color: rgba(176, 212, 255, 0.5);
+}
+.downloadContainer:hover .downloadIcon {
+    width: 1.25rem;
+    animation: 100ms dlHover both ease-in-out;
+}
+
+@keyframes dlHover {
+    from {
+        width: 1rem;
+    }
+    to {
+        width: 1.25rem;
+    }
+}
+
+.projectsPreview {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.projectHeading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(255, 51, 51);
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: linear-gradient(to left, rgba(240, 248, 255, 0.5), transparent 50%);
+    border-radius: 0.5rem;
+}
+
+.previewImg {
+    flex: 1 1 auto;
+    height: auto;
+    width: 50%;
+    aspect-ratio: 12/8;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
+    border-radius: 0.5rem;
+}
+
+.projectInfo {
+    flex: 1 1 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.projectTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(255, 51, 51);
+    text-transform: capitalize;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.siteLink {
+    height: 1rem;
+}
+
+.techUsed {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.techIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.techIconContainer {
+    position: relative;
+    overflow: visible;
+}
+
+.techIconContainer:hover::after {
+    width: max-content;
+    content: attr(data-tech-name);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: #333;
+    font-size: 0.7rem;
+}
+
+.techIcon {
+    height: 1.15rem;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+}
+
+.briefInfo {
+    width: 100%;
+    white-space: break-spaces;
+}
+
+.projectsBtn {
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(255, 51, 51);
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+}
+
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutHeading {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 116, 255);
+}
+
+.aboutInfo {
+    width: 80%;
+    max-width: 50rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutImg {
+    width: calc(50% - 1.5rem);
+    aspect-ratio: 4/3;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
+}
+
+.aboutShortInfo {
+    width: calc(50% - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.shortIntro {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.longIntro {
+    font-size: 0.9rem;
+}
+
+.aboutBtn {
+    padding: 0.5rem 0.75rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(0, 116, 255);
+    border: 1px solid transparent;
+    border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .landingView {
+        gap: 5rem;
+    }
+
+    .introContainer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro {        
+        order: 1;
+    }
+
+    .name {
+        font-size: 2.25rem;
+    }
+
+    .roles {
+        font-size: 1rem;
+    }
+
+    .skillSet {
+        justify-content: center;
+        font-size: 0.9rem;
+        gap: 0.5rem;
+    }
+
+    hr {
+        height: 1.75rem;
+    }
+
+    .skillIcon {
+        height: 1.75rem;
+    }
+
+    .projectInfo {
+        font-size: 0.75rem;
+        gap: 0.25rem;
+    }
+
+    .projectTitle {
+        font-size: 1rem;
+    }
+
+    .aboutContainer {
+        gap: 3rem;
+    }
+
+    .aboutInfo {
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .aboutImg {
+        width: 50%;
+    }
+    
+    .aboutShortInfo {
+        width: 50%;
+    }
+
+    .shortIntro {
+        font-size: 0.8rem;
+    }
+    
+    .longIntro {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        min-height: calc(100vh - 21.5rem);
+    }
+
+    .introContainer {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .intro {        
+        order: 1;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+
+    .roles {
+        font-size: 0.9rem;
+    }
+
+    .skillSet {
+        font-size: 0.8rem;
+    }
+
+    hr {
+        height: 1.5rem;
+    }
+
+    .skillIcon {
+        height: 1.5rem;
+    }
+
+    .project {
+        flex-direction: column;
+        background: linear-gradient(to top, rgba(240, 248, 255, 0.5), transparent 50%);
+    }
+
+    .previewImg {
+        width: 100%;
+    }
+
+    .projectInfo {
+        width: 100%;
+    }
+
+    .aboutContainer {
+        gap: 1rem;
+    }
+
+    .aboutInfo {
+        flex-direction: column;
+        gap: 1rem;
+        height: max-content;
+    }
+
+    .aboutImg {
+        width: 100%;
+    }
+    
+    .aboutShortInfo {
+        width: 100%;
+    }
+}
