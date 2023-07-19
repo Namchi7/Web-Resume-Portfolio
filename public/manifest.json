@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Aman Kumar Portfolio",
+  "name": "Aman Kumar Portfolio - FrontEnd Developer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo500.svg",
-      "sizes": "500x500"
+      "src": "logo-16x16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "logo-32x32.png",
+      "sizes": "32x32"
     }
   ],
   "start_url": ".",
