@@ -41,11 +41,11 @@ function Certificates() {
         </p>
       </div>
 
-      <div className={styles.certificate}>
+      {/* <div className={styles.certificate}>
         <div className={styles.certImg}></div>
         <div className={styles.certHead}>Certificate Name</div>
         <p className={styles.certInfo}>Certificate information</p>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route exact path="/certificates" element={<Certificates />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
