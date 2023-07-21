@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import Experience from "./components/Experience";
 import Education from "./components/Education.js";
 import Projects from "./components/Projects";
-import Certificates from "./components/Certificates";
+// import Certificates from "./components/Certificates";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/experience" element={<Experience />} />
         <Route exact path="/education" element={<Education />} />
         <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/certificates" element={<Certificates />} />
+        {/* <Route exact path="/certificates" element={<Certificates />} /> */}
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />

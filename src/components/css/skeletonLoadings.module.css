@@ -1,0 +1,82 @@
+.certificateContainer {
+    padding: 1.5rem;
+    border: 4px solid #e4e4e4;
+    animation: loading ease-in-out 1500ms infinite;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 50%
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+.certificateContainer {
+    width: 430px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid #e4e4e4;
+    padding: 1rem;
+}
+
+.certificateLogo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #e4e4e4;
+}
+
+.certificateName {
+    width: 50%;
+    height: 25px;
+    background-color: #e4e4e4;
+}
+
+.certificateParagraph {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.certificateLine1{
+    width: 80%;
+    height: 16px;
+    background-color: #e4e4e4;
+}
+.certificateLine2{
+    width: 70%;
+    height: 16px;
+    background-color: #e4e4e4;
+}
+.certificateLine3 {
+    width: 50%;
+    height: 16px;
+    background-color: #e4e4e4;
+}
+
+.certificateLastRow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    /* margin-top: 0px; */
+}
+
+.certificateSignBox {
+    width: 75px;
+    height: 40px;
+    background-color: #e4e4e4;
+}
+

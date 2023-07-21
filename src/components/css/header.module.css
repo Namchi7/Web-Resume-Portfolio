@@ -120,7 +120,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 /* a:hover {

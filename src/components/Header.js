@@ -39,9 +39,9 @@ function Header() {
           <Link to="/projects" className={styles.projects}>
             Projects
           </Link>
-          <Link to="/certificates" className={styles.certificates}>
+          {/* <Link to="/certificates" className={styles.certificates}>
             Certificates
-          </Link>
+          </Link> */}
           <Link to="/about" className={styles.about}>
             About
           </Link>
@@ -89,13 +89,13 @@ function Header() {
             >
               Projects
             </Link>
-            <Link
+            {/* <Link
               to="/certificates"
               onClick={closeSideBar}
               className={styles.certificates}
             >
               Certificates
-            </Link>
+            </Link> */}
             <Link to="/about" onClick={closeSideBar} className={styles.about}>
               About
             </Link>
