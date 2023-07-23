@@ -67,6 +67,65 @@ function Education() {
       </div>
     </div>
   );
+
+  // return (
+  //   <div className={styles.container}>
+  //     <div className={styles.heading}>Education</div>
+
+  //     <div className={styles.educationDiv}>
+  //       <div className={styles.education}>
+  //         <div className={styles.eduLeft}>
+  //           <div className={styles.level}>GRADUATION</div>
+  //           <div className={styles.degree}>Bachelor of Technology</div>
+  //           <div className={styles.specialization}>
+  //             Computer Science and Engineering
+  //           </div>
+  //           <div className={styles.score}>8.01/10 CGPA</div>
+  //           <div className={styles.school}>Lovely Professional University</div>
+  //         </div>
+  //         <div className={styles.eduMid}>
+  //           <div className={styles.levelHead}>LEVEL</div>
+  //           <div className={styles.degreeHead}>DEGREE</div>
+  //           <div className={styles.specializationHead}>SPECIALIZATION</div>
+  //           <div className={styles.scoreHead}>SCORE</div>
+  //           <div className={styles.schoolHead}>SCHOOL</div>
+  //         </div>
+  //         <div className={styles.eduRight}>
+  //           <div className={styles.level}></div>
+  //           <div className={styles.degree}></div>
+  //           <div className={styles.specialization}></div>
+  //           <div className={styles.score}></div>
+  //           <div className={styles.school}></div>
+  //         </div>
+  //       </div>
+  //       <div className={styles.education}>
+  //         <div className={styles.eduLeft}>
+  //           <div className={styles.level}></div>
+  //           <div className={styles.degree}></div>
+  //           <div className={styles.specialization}></div>
+  //           <div className={styles.score}></div>
+  //           <div className={styles.school}></div>
+  //         </div>
+  //         <div className={styles.eduMid}>
+  //           <div className={styles.levelHead}>LEVEL</div>
+  //           <div className={styles.degreeHead}>DEGREE</div>
+  //           <div className={styles.specializationHead}>SPECIALIZATION</div>
+  //           <div className={styles.scoreHead}>SCORE</div>
+  //           <div className={styles.schoolHead}>SCHOOL</div>
+  //         </div>
+  //         <div className={styles.eduRight}>
+  //           <div className={styles.level}>GRADUATION</div>
+  //           <div className={styles.degree}>Bachelor of Technology</div>
+  //           <div className={styles.specialization}>
+  //             Computer Science and Engineering
+  //           </div>
+  //           <div className={styles.score}>8.01/10 CGPA</div>
+  //           <div className={styles.school}>Lovely Professional University</div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default Education;

@@ -12,9 +12,17 @@ export const Send_Email = (form) => {
       (result) => {
         console.log(result.text);
         console.log("Email sent");
+        return {
+          result: "success",
+          message: result.text,
+        };
       },
       (error) => {
         console.log(error.text);
+        return {
+          result: "error",
+          message: error.text,
+        };
       }
     );
 };
