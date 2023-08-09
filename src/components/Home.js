@@ -179,7 +179,7 @@ function Home() {
             <div className={styles.projectTitle}>Countries</div>
             <div className={styles.projectLinks}>
               <Link
-                to="#"
+                to="https://countriesaman.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.siteLinkContainer}

@@ -48,6 +48,7 @@ function Contact() {
     //   .setAttribute("disabled", "");
 
     Send_Email(form);
+    clearContactForm();
     // if (response.result === "success") {
     //   setError(false);
     //   clearContactForm();
@@ -60,7 +61,13 @@ function Contact() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>CONTACT</div>
-      <form ref={form} onSubmit={sendEmail} className={styles.form}>
+
+      <form
+        ref={form}
+        action="amankumar.com/contact"
+        onSubmit={sendEmail}
+        className={styles.form}
+      >
         <label className={styles.label}>Name</label>
         <input
           className={styles.inputFields}
