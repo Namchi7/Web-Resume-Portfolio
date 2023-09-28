@@ -12,9 +12,9 @@ function Footer() {
           <Link to="/experience" className={styles.experience}>
             Experience
           </Link>
-          <Link to="/education" className={styles.education}>
+          {/* <Link to="/education" className={styles.education}>
             Education
-          </Link>
+          </Link> */}
           <Link to="/projects" className={styles.projects}>
             Projects
           </Link>
