@@ -1,11 +1,15 @@
 import { useEffect } from "react";
 
+import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/experience.module.css";
 import HighRadius from "../assets/images/highradius.png";
 
 function Experience() {
+  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setDoucmentTitle("Aman Kumar | Experience");
   }, []);
 
   return (
