@@ -1,12 +1,17 @@
 import { useEffect } from "react";
 
+import { useDocumentTitle } from "./hooks/setDocumentTitle";
+
 import styles from "./css/certificates.module.css";
 import { CertificateLoading } from "./SkeletonsLoadings";
 import certComp from "../assets/images/Compressed/certificate codewars2k19 compressed.jpg";
 
 function Certificates() {
+  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setDoucmentTitle("Aman Kumar | About");
   }, []);
 
   return (

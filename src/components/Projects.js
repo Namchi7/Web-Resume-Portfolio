@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/projects.module.css";
 import openLinkIcon from "../assets/images/Open-Link.svg";
 import githubIcon from "../assets/images/Github-Black.svg";
@@ -12,8 +13,11 @@ import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 
 function Projects() {
+  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setDoucmentTitle("Aman Kumar | Education");
   }, []);
 
   return (

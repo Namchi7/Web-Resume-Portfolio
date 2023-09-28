@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/home.module.css";
 import dp from "../assets/images/DP.png";
 import htmlIcon from "../assets/images/HTML5.svg";
@@ -18,8 +19,11 @@ function Home() {
   const resumeFolder =
     "https://drive.google.com/drive/folders/1qkjaIZpz7R03DGHVFcdKHqM1s2vByyHx?usp=drive_link";
 
+  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setDoucmentTitle("Aman Kumar | Education");
   }, []);
 
   return (

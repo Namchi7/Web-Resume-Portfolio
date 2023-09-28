@@ -1,4 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+
+import { useDocumentTitle } from "./hooks/setDocumentTitle";
 
 import { Send_Email } from "./SendEmail";
 import styles from "./css/contact.module.css";
@@ -6,6 +8,13 @@ import styles from "./css/contact.module.css";
 function Contact() {
   const form = useRef();
   const [error, setError] = useState(false);
+
+  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setDoucmentTitle("Aman Kumar | About");
+  }, []);
 
   const checkEmptyInputs = () => {
     if (document.querySelector("[data-contact-name]").value === "") {
