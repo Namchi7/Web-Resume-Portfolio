@@ -17,7 +17,7 @@ function Projects() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Education");
+    setDoucmentTitle("Aman Kumar | Projects");
   }, []);
 
   return (

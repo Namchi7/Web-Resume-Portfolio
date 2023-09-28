@@ -8,7 +8,7 @@ function Skills() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Education");
+    setDoucmentTitle("Aman Kumar | Skills");
   }, []);
 
   return (

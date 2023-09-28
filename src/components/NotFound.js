@@ -9,7 +9,7 @@ function NotFound() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | About");
+    setDoucmentTitle("Aman Kumar | Page Not Found");
   }, []);
 
   return (

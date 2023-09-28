@@ -13,7 +13,7 @@ function Contact() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | About");
+    setDoucmentTitle("Aman Kumar | Contact");
   }, []);
 
   const checkEmptyInputs = () => {
