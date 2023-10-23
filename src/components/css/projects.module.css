@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
 }
 
 .heading {
@@ -19,20 +20,24 @@
 
 .project {
     width: 100%;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: linear-gradient(to left, rgba(229, 243, 255, 0.5), transparent 50%);
+    /* background: linear-gradient(to left, rgba(229, 243, 255, 0.5), transparent 50%); */
     border-radius: 0.5rem;
 }
 
-.project:nth-child(2n + 1) {
-    background: linear-gradient(to left, transparent 50%, rgba(229, 243, 255, 0.5));
+.project:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* .project:nth-child(2n + 1) {
+    background: linear-gradient(to left, transparent 50%, rgba(229, 243, 255, 0.5));
+} */
 
 .project:nth-child(2n + 1) > .projectImg {
     order: 2;
@@ -74,6 +79,7 @@
 
 .siteLink {
     height: 1rem;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
 }
 
 .techUsed {
@@ -114,6 +120,7 @@
 .techIcon {
     height: 1.15rem;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
 }
 
 .projectShortInfo {
@@ -151,6 +158,10 @@
 
     .project:nth-child(2n + 1) {
         background: linear-gradient(to bottom, transparent 50%, rgba(229, 243, 255, 0.5))
+    }
+
+    .project:nth-child(2n + 1):hover {
+        background-color: rgba(255, 255, 255, 0.2);
     }
 
     .projectImg {

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import styles from "./css/header.module.css";
+import amanLogo from "../assets/images/logo 500x500.svg";
 import menuIcon from "../assets/images/Menu.svg";
 import closeIcon from "../assets/images/Cross.svg";
 
@@ -26,7 +27,8 @@ function Header() {
     <div className={styles.container}>
       <div className={styles.subContainer}>
         <Link to="/" className={styles.logo}>
-          AMAN KUMAR
+          <img src={amanLogo} alt="Logo" className={styles.amanLogo} />
+          MAN KUMAR
         </Link>
 
         <nav className={styles.navLinks}>

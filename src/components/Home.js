@@ -12,18 +12,20 @@ import figmaIcon from "../assets/images/Figma.svg";
 import downloadIcon from "../assets/images/Download.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
-import openLinkIcon from "../assets/images/Open-Link.svg";
-import githubIcon from "../assets/images/Github-Black.svg";
+import openLinkIcon from "../assets/images/Open-Link-White.svg";
+// import openLinkIcon from "../assets/images/Open-Link.svg";
+import githubIcon from "../assets/images/github.svg";
+// import githubIcon from "../assets/images/Github-Black.svg";
 
 function Home() {
   const resumeFolder =
     "https://drive.google.com/drive/folders/1qkjaIZpz7R03DGHVFcdKHqM1s2vByyHx?usp=drive_link";
 
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar");
+    setDocumentTitle("Aman Kumar");
   }, []);
 
   return (
@@ -31,7 +33,7 @@ function Home() {
       <div className={styles.landingView}>
         <div className={styles.introContainer}>
           <div className={styles.intro}>
-            <div className={styles.name}>Aman Kumar</div>
+            <h1 className={styles.name}>Aman Kumar</h1>
 
             <div className={styles.roles}>
               <div className={styles.role}>Front-End Developer</div>
@@ -96,10 +98,11 @@ function Home() {
 
       <div className={styles.projectsPreview}>
         <div className={styles.projectHeading}>PROJECTS</div>
+
         <div className={styles.project}>
           <img
             src="https://drive.google.com/uc?export=download&id=1G_4UHNZ-J04tivp-U5-k44QkvPbAdpJS"
-            alt="lsAnime Preview Image"
+            alt="lsAnime Preview"
             className={styles.previewImg}
           />
 
@@ -175,7 +178,7 @@ function Home() {
         <div style={{ marginTop: "2rem" }} className={styles.project}>
           <img
             src="https://drive.google.com/uc?export=download&id=1qW58ac-poWlMAHcqPSLqUqEzwxd3n3FF"
-            alt="Countries Preview Image"
+            alt="Countries Preview"
             className={styles.previewImg}
           />
 
@@ -247,6 +250,7 @@ function Home() {
             </div>
           </div>
         </div>
+
         <Link to="/projects" className={styles.projectsBtn}>
           ALL PROJECTS
         </Link>
@@ -257,7 +261,7 @@ function Home() {
         <div className={styles.aboutInfo}>
           <img
             src="https://drive.google.com/uc?export=download&id=1933q-Cc04PYx-9_8_7MilTb_SmnXkDWx"
-            alt="About Preview Image"
+            alt="About Preview"
             className={styles.aboutImg}
           />
           <div className={styles.aboutShortInfo}>

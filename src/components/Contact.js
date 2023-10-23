@@ -9,11 +9,11 @@ function Contact() {
   const form = useRef();
   const [error, setError] = useState(false);
 
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Contact");
+    setDocumentTitle("Aman Kumar | Contact");
   }, []);
 
   const checkEmptyInputs = () => {

@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
-// import Education from "./components/Education.js";
+import Education from "./components/Education.js";
 import Projects from "./components/Projects";
 // import Certificates from "./components/Certificates";
 import About from "./components/About";
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/experience" element={<Experience />} />
-        {/* <Route exact path="/education" element={<Education />} /> */}
+        <Route exact path="/education" element={<Education />} />
         <Route exact path="/projects" element={<Projects />} />
         {/* <Route exact path="/certificates" element={<Certificates />} /> */}
         <Route exact path="/about" element={<About />} />

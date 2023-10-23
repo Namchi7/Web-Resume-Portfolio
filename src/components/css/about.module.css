@@ -1,7 +1,7 @@
 .container {
     width: 95%;
     max-width: 65rem;
-    min-height: calc(100vh - 13.3rem);
+    min-height: calc(100vh - 13.8rem);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -11,7 +11,6 @@
 }
 
 .name {
-    font-family: ProximaNova, sans-serif;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;

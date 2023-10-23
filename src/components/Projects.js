@@ -3,8 +3,10 @@ import { useEffect } from "react";
 
 import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/projects.module.css";
-import openLinkIcon from "../assets/images/Open-Link.svg";
-import githubIcon from "../assets/images/Github-Black.svg";
+import openLinkIcon from "../assets/images/Open-Link-White.svg";
+// import openLinkIcon from "../assets/images/Open-Link.svg";
+import githubIcon from "../assets/images/github.svg";
+// import githubIcon from "../assets/images/Github-Black.svg";
 import htmlIcon from "../assets/images/HTML5.svg";
 import cssIcon from "../assets/images/CSS3.svg";
 import jsIcon from "../assets/images/JavaScript.svg";
@@ -13,11 +15,11 @@ import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 
 function Projects() {
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Projects");
+    setDocumentTitle("Aman Kumar | Projects");
   }, []);
 
   return (
@@ -26,7 +28,7 @@ function Projects() {
       <div className={styles.project}>
         <img
           src="https://drive.google.com/uc?export=download&id=1G_4UHNZ-J04tivp-U5-k44QkvPbAdpJS"
-          alt="lsAnime Preview Image"
+          alt="lsAnime Preview"
           className={styles.projectImg}
         />
 
@@ -120,7 +122,7 @@ function Projects() {
       <div className={styles.project}>
         <img
           src="https://drive.google.com/uc?export=download&id=1qW58ac-poWlMAHcqPSLqUqEzwxd3n3FF"
-          alt="Countries Preview Image"
+          alt="Countries Preview"
           className={styles.projectImg}
         />
         <div className={styles.projectInfo}>
@@ -196,7 +198,7 @@ function Projects() {
       <div className={styles.project}>
         <img
           src="https://drive.google.com/uc?export=download&id=1rgTXAXUOdUFurcgDgy3TOGUl0VtGa4cp"
-          alt="Shopping List Preview Image"
+          alt="Shopping List Preview"
           className={styles.projectImg}
         />
         <div className={styles.projectInfo}>

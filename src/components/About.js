@@ -8,11 +8,11 @@ import GithubIcon from "../assets/images/github.svg";
 import LinkedInIcon from "../assets/images/linkedIn.svg";
 
 function About() {
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | About");
+    setDocumentTitle("Aman Kumar | About");
   }, []);
 
   return (

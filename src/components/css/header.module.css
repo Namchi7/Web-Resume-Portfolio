@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(63, 166, 255); */
+    color: #333;
+    background-color: var(--dark-headerbg-color);
     box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
     z-index: 12;
 }
@@ -25,6 +26,13 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.amanLogo {
+    height: 2rem;
 }
 
 .navLinks {
@@ -61,7 +69,7 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: rgb(72, 191, 170);
     z-index: 15;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;

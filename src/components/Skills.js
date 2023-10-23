@@ -4,11 +4,11 @@ import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/skills.module.css";
 
 function Skills() {
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Skills");
+    setDocumentTitle("Aman Kumar | Skills");
   }, []);
 
   return (

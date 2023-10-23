@@ -7,11 +7,11 @@ import { CertificateLoading } from "./SkeletonsLoadings";
 import certComp from "../assets/images/Compressed/certificate codewars2k19 compressed.jpg";
 
 function Certificates() {
-  const [document_title, setDoucmentTitle] = useDocumentTitle("Aman Kumar");
+  const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    setDoucmentTitle("Aman Kumar | Certificates");
+    setDocumentTitle("Aman Kumar | Certificates");
   }, []);
 
   return (
