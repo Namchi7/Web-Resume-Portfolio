@@ -36,6 +36,7 @@
 }
 
 .navLinks {
+    position: relative;
     width: 45%;
     display: flex;
     flex-wrap: nowrap;
@@ -87,11 +88,9 @@
 @keyframes drawer-open {
     from {
         transform: translateX(-100%);
-        /* width: 0; */
     }
     to {
         transform: translateX(0);
-        /* width: 85%; */
     }
 }
 
@@ -129,6 +128,11 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1.5rem;
+}
+
+.sideNavLink:hover {
+    color: black;
+    transition: color 0.25s ease-in-out;
 }
 
 /* a:hover {

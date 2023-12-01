@@ -27,7 +27,7 @@ function Projects() {
       <div className={styles.heading}>PROJECTS</div>
       <div className={styles.project}>
         <img
-          src="https://drive.google.com/uc?export=download&id=1G_4UHNZ-J04tivp-U5-k44QkvPbAdpJS"
+          src="https://drive.google.com/uc?export=download&id=1pJME2pWx6jrvcWz0J6LHrB1WAgJ3LYAE"
           alt="lsAnime Preview"
           className={styles.projectImg}
         />
@@ -251,8 +251,71 @@ function Projects() {
             </div>
           </div>
           <div className={styles.projectShortInfo}>
-            Some information regarding the project like, the working, flow and
-            technologies used. Also information about the API used, if any.
+            Create, edit and manage tou shopping lists in one place so you do
+            not forget your important items saving you an extra trip to the
+            market.
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.project}>
+        <img
+          src="https://drive.google.com/uc?export=download&id=1bipgbn50tXkTrLjcWK3NgRhWwIWX2r5b"
+          alt="Shopping List Preview"
+          className={styles.projectImg}
+        />
+        <div className={styles.projectInfo}>
+          <div className={styles.projectTitle}>Tic-Tac-Toe</div>
+          <div className={styles.projectLinks}>
+            <Link
+              to="https://namchi7.github.io/Tic-Tac-Toe-JS-Game/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={openLinkIcon}
+                alt="Tic-Tac-Toe"
+                className={styles.siteLink}
+              />
+            </Link>
+            <Link
+              to="https://github.com/Namchi7/Tic-Tac-Toe-JS-Game"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={githubIcon}
+                alt="Github/Shopping-List"
+                className={styles.siteLink}
+              />
+            </Link>
+          </div>
+          <div className={styles.techUsed}>
+            <strong>Tech Used:</strong>
+            <div className={styles.techIcons}>
+              <div className={styles.techIconContainer} data-tech-name="HTML">
+                <img src={htmlIcon} alt="HTML" className={styles.techIcon} />
+              </div>
+              <div className={styles.techIconContainer} data-tech-name="CSS">
+                <img src={cssIcon} alt="CSS" className={styles.techIcon} />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="JavaScript"
+              >
+                <img
+                  src={jsIcon}
+                  alt="JavaScript"
+                  className={styles.techIcon}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.projectShortInfo}>
+            This is a two player Tic-Tac-Toe game where you can select custom
+            icons provided giving a whole new gaming experience.
           </div>
         </div>
       </div>

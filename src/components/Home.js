@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useDocumentTitle } from "./hooks/setDocumentTitle";
 import styles from "./css/home.module.css";
 import dp from "../assets/images/DP.png";
+import dp_small_bg from "../assets/images/DP-small-bg.png";
 import htmlIcon from "../assets/images/HTML5.svg";
 import cssIcon from "../assets/images/CSS3.svg";
 import jsIcon from "../assets/images/JavaScript.svg";
@@ -12,6 +13,9 @@ import figmaIcon from "../assets/images/Figma.svg";
 import downloadIcon from "../assets/images/Download.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
+import lsAnime from "../assets/images/Compressed/lsAnime.png";
+import countriesImg from "../assets/images/Compressed/countries.png";
+import aboutImg from "../assets/images/Compressed/about.png";
 import openLinkIcon from "../assets/images/Open-Link-White.svg";
 // import openLinkIcon from "../assets/images/Open-Link.svg";
 import githubIcon from "../assets/images/github.svg";
@@ -42,7 +46,15 @@ function Home() {
           </div>
 
           <div className={styles.imgContainer}>
-            <div className={styles.image}>
+            <div
+              style={{
+                background: `url(${dp_small_bg})`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+              className={styles.image}
+            >
               <img src={dp} alt="Aman Kumar DP" className={styles.dp} />
             </div>
             <div className={styles.imageBG} />
@@ -101,7 +113,13 @@ function Home() {
 
         <div className={styles.project}>
           <img
-            src="https://drive.google.com/uc?export=download&id=1G_4UHNZ-J04tivp-U5-k44QkvPbAdpJS"
+            style={{
+              background: `url(${lsAnime})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
+            src="https://drive.google.com/uc?export=download&id=1pJME2pWx6jrvcWz0J6LHrB1WAgJ3LYAE"
             alt="lsAnime Preview"
             className={styles.previewImg}
           />
@@ -175,8 +193,16 @@ function Home() {
           </div>
         </div>
 
-        <div style={{ marginTop: "2rem" }} className={styles.project}>
+        <hr />
+
+        <div className={styles.project}>
           <img
+            style={{
+              background: `url(${countriesImg})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
             src="https://drive.google.com/uc?export=download&id=1qW58ac-poWlMAHcqPSLqUqEzwxd3n3FF"
             alt="Countries Preview"
             className={styles.previewImg}
@@ -210,6 +236,7 @@ function Home() {
                 />
               </Link>
             </div>
+
             <div className={styles.techUsed}>
               <strong>Tech Used:</strong>
               <div className={styles.techIcons}>
@@ -260,6 +287,12 @@ function Home() {
         <div className={styles.aboutHeading}>ABOUT</div>
         <div className={styles.aboutInfo}>
           <img
+            style={{
+              background: `url(${aboutImg})`,
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+            }}
             src="https://drive.google.com/uc?export=download&id=1933q-Cc04PYx-9_8_7MilTb_SmnXkDWx"
             alt="About Preview"
             className={styles.aboutImg}

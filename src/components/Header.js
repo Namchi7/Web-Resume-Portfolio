@@ -32,22 +32,34 @@ function Header() {
         </Link>
 
         <nav className={styles.navLinks}>
-          <Link to="/experience" className={styles.experience}>
+          <Link
+            to="/experience"
+            className={styles.navLink}
+            data-linkname="Experience"
+          >
             Experience
           </Link>
-          {/* <Link to="/education" className={styles.education}>
+          {/* <Link to="/education" className={styles.navLink}>
             Education
           </Link> */}
-          <Link to="/projects" className={styles.projects}>
+          <Link
+            to="/projects"
+            className={styles.navLink}
+            data-linkname="Projects"
+          >
             Projects
           </Link>
-          {/* <Link to="/certificates" className={styles.certificates}>
+          {/* <Link to="/certificates" className={styles.navLink}>
             Certificates
           </Link> */}
-          <Link to="/about" className={styles.about}>
+          <Link to="/about" className={styles.navLink} data-linkname="About">
             About
           </Link>
-          <Link to="/contact" className={styles.contact}>
+          <Link
+            to="/contact"
+            className={styles.navLink}
+            data-linkname="Contact"
+          >
             Contact
           </Link>
         </nav>
@@ -73,38 +85,42 @@ function Header() {
             <Link
               to="/experience"
               onClick={closeSideBar}
-              className={styles.experience}
+              className={styles.sideNavLink}
             >
               Experience
             </Link>
             {/* <Link
               to="/education"
               onClick={closeSideBar}
-              className={styles.education}
+              className={styles.sideNavLink}
             >
               Education
             </Link> */}
             <Link
               to="/projects"
               onClick={closeSideBar}
-              className={styles.projects}
+              className={styles.sideNavLink}
             >
               Projects
             </Link>
             {/* <Link
               to="/certificates"
               onClick={closeSideBar}
-              className={styles.certificates}
+              className={styles.sideNavLink}
             >
               Certificates
             </Link> */}
-            <Link to="/about" onClick={closeSideBar} className={styles.about}>
+            <Link
+              to="/about"
+              onClick={closeSideBar}
+              className={styles.sideNavLink}
+            >
               About
             </Link>
             <Link
               to="/contact"
               onClick={closeSideBar}
-              className={styles.contact}
+              className={styles.sideNavLink}
             >
               Contact
             </Link>
