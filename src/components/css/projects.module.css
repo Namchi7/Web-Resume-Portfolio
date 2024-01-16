@@ -29,6 +29,7 @@
   padding: 1rem;
   /* background: linear-gradient(to left, rgba(229, 243, 255, 0.5), transparent 50%); */
   border-radius: 0.5rem;
+  border-bottom: 1px solid rgb(255, 51, 51);
 }
 
 .project:hover {
@@ -42,6 +43,13 @@
 
 .project:nth-child(2n + 1) > .projectImg {
   order: 2;
+}
+
+.container > hr {
+  width: 70%;
+  height: 1px;
+  background-color: rgb(255, 51, 51);
+  opacity: 0.5;
 }
 
 .projectImg {

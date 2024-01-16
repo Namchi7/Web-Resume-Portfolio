@@ -14,6 +14,11 @@ import reactIcon from "../assets/images/ReactJs.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 
+import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
+import countriesPreview from "../assets/images/countries preview 600px.png";
+import shoppingListPreview from "../assets/images/Shopping List 600px.png";
+import ticTacToePreview from "../assets/images/Tic-Tac-Toe preview 600px.png";
+
 function Projects() {
   const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
 
@@ -27,7 +32,7 @@ function Projects() {
       <div className={styles.heading}>PROJECTS</div>
       <div className={styles.project}>
         <img
-          src="https://drive.google.com/uc?export=download&id=1pJME2pWx6jrvcWz0J6LHrB1WAgJ3LYAE"
+          src={lsAnimePreview}
           alt="lsAnime Preview"
           className={styles.projectImg}
         />
@@ -119,9 +124,11 @@ function Projects() {
         </div>
       </div>
 
+      {/* <hr /> */}
+
       <div className={styles.project}>
         <img
-          src="https://drive.google.com/uc?export=download&id=1qW58ac-poWlMAHcqPSLqUqEzwxd3n3FF"
+          src={countriesPreview}
           alt="Countries Preview"
           className={styles.projectImg}
         />
@@ -195,9 +202,11 @@ function Projects() {
         </div>
       </div>
 
+      {/* <hr /> */}
+
       <div className={styles.project}>
         <img
-          src="https://drive.google.com/uc?export=download&id=1rgTXAXUOdUFurcgDgy3TOGUl0VtGa4cp"
+          src={shoppingListPreview}
           alt="Shopping List Preview"
           className={styles.projectImg}
         />
@@ -258,9 +267,11 @@ function Projects() {
         </div>
       </div>
 
+      {/* <hr /> */}
+
       <div className={styles.project}>
         <img
-          src="https://drive.google.com/uc?export=download&id=1bipgbn50tXkTrLjcWK3NgRhWwIWX2r5b"
+          src={ticTacToePreview}
           alt="Shopping List Preview"
           className={styles.projectImg}
         />

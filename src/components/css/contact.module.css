@@ -1,141 +1,154 @@
 .container {
-    width: 95%;
-    max-width: 65rem;
-    min-height: calc(100vh - 13.5rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  width: 95%;
+  max-width: 65rem;
+  min-height: calc(100vh - 13.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
 .heading {
-    width: 100%;
-    color: #0074FF;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-align: center;
+  width: 100%;
+  color: #0074ff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .form {
-    width: 100%;
-    max-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    background-color: rgba(114, 221, 176, 0.25);
+  width: 100%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(114, 221, 176, 0.25);
 }
 
 .form > * {
-    width: 100%;
+  width: 100%;
 }
 
 .label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .inputFields {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 input {
-    outline: none;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 2px solid #0074FF;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #0074ff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 input:focus {
-    border: 2px solid rgb(42, 193, 42);
+  border: 2px solid rgb(42, 193, 42);
 }
 
 textarea {
-    resize: none;
-    height: 7rem;
-    outline: none;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border: 2px solid #0074FF;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+  resize: none;
+  height: 7rem;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #0074ff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 textarea:focus {
-    border: 2px solid rgb(42, 193, 42);
+  border: 2px solid rgb(42, 193, 42);
 }
 
 .submitBtn {
-    width: 50%;
-    background-color: #0074FF;
-    color: white;
-    margin-bottom: 0;
-    border: 2px solid transparent;
+  width: 50%;
+  background-color: #0074ff;
+  color: white;
+  margin-bottom: 0;
+  border: 2px solid transparent;
 }
 
 .submitBtn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .submitBtn:focus {
-    border: 2px solid transparent;
+  border: 2px solid transparent;
+}
+
+.emailStatus {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 700px) {
-    .container {
-        margin-bottom: 0.2rem;
-    }
+  .container {
+    margin-bottom: 0.2rem;
+  }
 
-    .heading {
-        font-size: 1.5rem;
-    }
+  .heading {
+    font-size: 1.5rem;
+  }
 
-    .form {
-        width: 85%;
-    }
+  .form {
+    width: 85%;
+  }
 
-    .label {
-        font-size: 1rem;
-    }
+  .label {
+    font-size: 1rem;
+  }
 
-    .inputFields {
-        font-size: 0.9rem;
-    }
+  .inputFields {
+    font-size: 0.9rem;
+  }
 
-    .submitBtn {
-        font-size: 0.9rem;
-    }
+  .submitBtn {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .container {
-        min-height: calc(100vh - 21.5rem);
-    }
+  .container {
+    min-height: calc(100vh - 21.5rem);
+  }
 
-    .heading {
-        font-size: 1.25rem;
-    }
+  .heading {
+    font-size: 1.25rem;
+  }
 
-    .form {
-        width: 85%;
-    }
+  .form {
+    width: 85%;
+  }
 
-    .label {
-        font-size: 0.8rem;
-    }
+  .label {
+    font-size: 0.8rem;
+  }
 
-    .inputFields {
-        font-size: 0.8rem;
-    }
-    
-    .submitBtn {
-        font-size: 0.8rem;
-    }
+  .inputFields {
+    font-size: 0.8rem;
+  }
+
+  .submitBtn {
+    font-size: 0.8rem;
+  }
 }

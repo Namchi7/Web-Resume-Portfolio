@@ -20,6 +20,9 @@ import openLinkIcon from "../assets/images/Open-Link-White.svg";
 // import openLinkIcon from "../assets/images/Open-Link.svg";
 import githubIcon from "../assets/images/github.svg";
 // import githubIcon from "../assets/images/Github-Black.svg";
+import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
+import countriesPreview from "../assets/images/countries preview 600px.png";
+import aboutPreview from "../assets/images/About Page preview.png";
 
 function Home() {
   const resumeFolder =
@@ -119,7 +122,7 @@ function Home() {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
-            src="https://drive.google.com/uc?export=download&id=1pJME2pWx6jrvcWz0J6LHrB1WAgJ3LYAE"
+            src={lsAnimePreview}
             alt="lsAnime Preview"
             className={styles.previewImg}
           />
@@ -203,7 +206,7 @@ function Home() {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
-            src="https://drive.google.com/uc?export=download&id=1qW58ac-poWlMAHcqPSLqUqEzwxd3n3FF"
+            src={countriesPreview}
             alt="Countries Preview"
             className={styles.previewImg}
           />
@@ -293,7 +296,7 @@ function Home() {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
-            src="https://drive.google.com/uc?export=download&id=1933q-Cc04PYx-9_8_7MilTb_SmnXkDWx"
+            src={aboutPreview}
             alt="About Preview"
             className={styles.aboutImg}
           />

@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /public/favicon_io.zip
+
+/amankumar.rar
+.env

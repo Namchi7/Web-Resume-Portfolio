@@ -7,14 +7,13 @@ import styles from "./css/contact.module.css";
 
 function Contact() {
   const form = useRef();
+  const formName = useRef();
+  const formEmail = useRef();
+  const formMsg = useRef();
   const [error, setError] = useState(false);
+  const [emailStatusMsg, setEmailStatusMsg] = useState("");
 
   const [document_title, setDocumentTitle] = useDocumentTitle("Aman Kumar");
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    setDocumentTitle("Aman Kumar | Contact");
-  }, []);
 
   const checkEmptyInputs = () => {
     if (document.querySelector("[data-contact-name]").value === "") {
@@ -25,7 +24,7 @@ function Contact() {
           "border: 2px solid rgb(42, 193, 42);;";
       }, 1000);
     }
-    if ((document.querySelector("[data-contact-email]").value = "")) {
+    if (document.querySelector("[data-contact-email]").value === "") {
       document.querySelector("[data-contact-email]").style.border =
         "border: 2px solid red;";
       setTimeout(() => {
@@ -33,7 +32,7 @@ function Contact() {
           "border: 2px solid rgb(42, 193, 42);;";
       }, 1000);
     }
-    if ((document.querySelector("[data-contact-msg]").value = "")) {
+    if (document.querySelector("[data-contact-msg]").value === "") {
       document.querySelector("[data-contact-msg]").style.border =
         "border: 2px solid red;";
       setTimeout(() => {
@@ -49,6 +48,20 @@ function Contact() {
     document.querySelector("[data-contact-msg]").value = "";
   };
 
+  const showEmailStatusMsg = (res) => {
+    const emailStatusDiv = document.querySelector("[data-email-status]");
+    emailStatusDiv.style.display = "block";
+    if (res === "success") {
+      setEmailStatusMsg("Email Sent Successfully.");
+    } else {
+      setEmailStatusMsg(`Error Sending The Email!\nPlease Try Again.`);
+    }
+
+    setTimeout(() => {
+      emailStatusDiv.style.display = "none";
+    }, 2000);
+  };
+
   const sendEmail = async (e) => {
     e.preventDefault();
     checkEmptyInputs();
@@ -56,9 +69,31 @@ function Contact() {
     //   .querySelector("[data-contact-submit]")
     //   .setAttribute("disabled", "");
 
-    Send_Email(form);
+    // Send_Email(form);
+    const formData = {
+      name: formName.current.value,
+      email: formEmail.current.value,
+      msg: formMsg.current.value,
+    };
+
+    fetch(
+      `${process.env.REACT_APP_MAIL_URL}?email=${formData.email}&name=${formData.name}&msg=${formData.msg}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          console.log("Success");
+          showEmailStatusMsg("success");
+          setError(false);
+          clearContactForm();
+        } else {
+          showEmailStatusMsg("failure");
+          setError(true);
+        }
+      });
+
     clearContactForm();
-    // if (response.result === "success") {
+    // if (resData.status === "success") {
     //   setError(false);
     //   clearContactForm();
     // } else {
@@ -67,13 +102,18 @@ function Contact() {
     // document.querySelector("[data-contact-submit]").removeAttribute("disabled");
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setDocumentTitle("Aman Kumar | Contact");
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.heading}>CONTACT</div>
 
       <form
         ref={form}
-        action="amankumar.com/contact"
+        // action=""
         onSubmit={sendEmail}
         className={styles.form}
       >
@@ -84,6 +124,7 @@ function Contact() {
           type="text"
           name="from_name"
           required
+          ref={formName}
         />
         <label className={styles.label}>Email</label>
         <input
@@ -92,12 +133,14 @@ function Contact() {
           type="email"
           name="from_email"
           required
+          ref={formEmail}
         />
         <label className={styles.label}>Message</label>
         <textarea
           className={styles.inputFields}
           data-contact-msg
           name="message"
+          ref={formMsg}
         />
         <input
           className={styles.submitBtn}
@@ -105,15 +148,23 @@ function Contact() {
           type="submit"
           value="Send"
           disabled={false}
-          required
         />
-        {error && (
+        <div
+          style={{ display: "none" }}
+          className={styles.emailStatus}
+          data-email-status
+        >
+          Error Sending The Email! <br />
+          Please Try Again.
+          {emailStatusMsg}
+        </div>
+        {/* {error && (
           <div className={styles.error}>
             Error occurred while send your message.
             <br />
             Please Try Again
           </div>
-        )}
+        )} */}
       </form>
     </div>
   );

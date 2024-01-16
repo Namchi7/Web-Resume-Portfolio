@@ -23,10 +23,15 @@ function Header() {
     overlay.style.display = "none";
   }
 
+  function navigatePage() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.subContainer}>
-        <Link to="/" className={styles.logo}>
+        <Link to="/" className={styles.logo} onClick={() => navigatePage()}>
           <img src={amanLogo} alt="Logo" className={styles.amanLogo} />
           MAN KUMAR
         </Link>
@@ -36,29 +41,38 @@ function Header() {
             to="/experience"
             className={styles.navLink}
             data-linkname="Experience"
+            onClick={() => navigatePage()}
           >
             Experience
           </Link>
-          {/* <Link to="/education" className={styles.navLink}>
+          {/* <Link to="/education" className={styles.navLink} onClick={() => navigatePage()}>
             Education
           </Link> */}
           <Link
             to="/projects"
             className={styles.navLink}
             data-linkname="Projects"
+            onClick={() => navigatePage()}
           >
             Projects
           </Link>
-          {/* <Link to="/certificates" className={styles.navLink}>
+          {/* <Link to="/certificates" className={styles.navLink}
+            onClick={() => navigatePage()}>
             Certificates
           </Link> */}
-          <Link to="/about" className={styles.navLink} data-linkname="About">
+          <Link
+            to="/about"
+            className={styles.navLink}
+            data-linkname="About"
+            onClick={() => navigatePage()}
+          >
             About
           </Link>
           <Link
             to="/contact"
             className={styles.navLink}
             data-linkname="Contact"
+            onClick={() => navigatePage()}
           >
             Contact
           </Link>
@@ -84,42 +98,54 @@ function Header() {
           <nav className={styles.sideNavLinks}>
             <Link
               to="/experience"
-              onClick={closeSideBar}
+              onClick={() => {
+                closeSideBar();
+                navigatePage();
+              }}
               className={styles.sideNavLink}
             >
               Experience
             </Link>
             {/* <Link
               to="/education"
-              onClick={closeSideBar}
+              onClick={() => {closeSideBar(); navigatePage()}}
               className={styles.sideNavLink}
             >
               Education
             </Link> */}
             <Link
               to="/projects"
-              onClick={closeSideBar}
+              onClick={() => {
+                closeSideBar();
+                navigatePage();
+              }}
               className={styles.sideNavLink}
             >
               Projects
             </Link>
             {/* <Link
               to="/certificates"
-              onClick={closeSideBar}
+              onClick={() => {closeSideBar(); navigatePage()}}
               className={styles.sideNavLink}
             >
               Certificates
             </Link> */}
             <Link
               to="/about"
-              onClick={closeSideBar}
+              onClick={() => {
+                closeSideBar();
+                navigatePage();
+              }}
               className={styles.sideNavLink}
             >
               About
             </Link>
             <Link
               to="/contact"
-              onClick={closeSideBar}
+              onClick={() => {
+                closeSideBar();
+                navigatePage();
+              }}
               className={styles.sideNavLink}
             >
               Contact
