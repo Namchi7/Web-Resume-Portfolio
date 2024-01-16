@@ -59,7 +59,7 @@ function Contact() {
 
     setTimeout(() => {
       emailStatusDiv.style.display = "none";
-    }, 2000);
+    }, 5000);
   };
 
   const sendEmail = async (e) => {
@@ -154,8 +154,6 @@ function Contact() {
           className={styles.emailStatus}
           data-email-status
         >
-          Error Sending The Email! <br />
-          Please Try Again.
           {emailStatusMsg}
         </div>
         {/* {error && (
