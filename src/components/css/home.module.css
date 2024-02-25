@@ -169,7 +169,7 @@
   justify-content: center;
   filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
 }
-.skillIconContainer:nth-child(3) {
+.skillIconsRow:nth-child(1) .skillIconContainer:nth-child(3) {
   filter: drop-shadow(0 0 2px #fff);
 }
 
