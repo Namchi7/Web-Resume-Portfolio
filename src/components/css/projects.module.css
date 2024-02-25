@@ -56,8 +56,9 @@
   height: auto;
   width: 50%;
   aspect-ratio: 12/8;
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  background-color: transparent;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.25); */
+  filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
   border-radius: 0.5rem;
 }
 

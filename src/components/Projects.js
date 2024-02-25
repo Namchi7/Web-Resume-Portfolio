@@ -11,9 +11,14 @@ import htmlIcon from "../assets/images/HTML5.svg";
 import cssIcon from "../assets/images/CSS3.svg";
 import jsIcon from "../assets/images/JavaScript.svg";
 import reactIcon from "../assets/images/ReactJs.svg";
+import nodeIcon from "../assets/images/NodeJs.svg";
+import expressIcon from "../assets/images/ExpressJs.svg";
+import mongoDBIcon from "../assets/images/MongoDB.svg";
+import jwtIcon from "../assets/images/JWT.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 
+import taskItPreview from "../assets/images/taskit preview 600px.png";
 import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
 import countriesPreview from "../assets/images/countries preview 600px.png";
 import shoppingListPreview from "../assets/images/Shopping List 600px.png";
@@ -30,6 +35,114 @@ function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>PROJECTS</div>
+      <div className={styles.project}>
+        <img
+          src={taskItPreview}
+          alt="TaskIt Preview"
+          className={styles.projectImg}
+        />
+
+        <div className={styles.projectInfo}>
+          <div className={styles.projectTitle}>TaskIt</div>
+          <div className={styles.projectLinks}>
+            <Link
+              to="https://taskit0.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={openLinkIcon}
+                alt="taskIt"
+                className={styles.siteLink}
+              />
+            </Link>
+            <Link
+              to="https://github.com/Namchi7/taskit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={githubIcon}
+                alt="Github/taskit"
+                className={styles.siteLink}
+              />
+            </Link>
+          </div>
+          <div className={styles.techUsed}>
+            <strong>Tech Used:</strong>
+            <div className={styles.techIcons}>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="ReactJs"
+              >
+                <img
+                  src={reactIcon}
+                  alt="ReactJs"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div className={styles.techIconContainer} data-tech-name="NodeJs">
+                <img src={nodeIcon} alt="NodeJs" className={styles.techIcon} />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="ExpressJs"
+              >
+                <img
+                  src={expressIcon}
+                  alt="ExpressJs"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="MongoDB"
+              >
+                <img
+                  src={mongoDBIcon}
+                  alt="MongoDB"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div className={styles.techIconContainer} data-tech-name="JWT">
+                <img src={jwtIcon} alt="JWT" className={styles.techIcon} />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Redux-Toolkit"
+              >
+                <img
+                  src={reduxIcon}
+                  alt="Redux-Toolkit"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Redux-Router-Dom"
+              >
+                <img
+                  src={reactRouterIcon}
+                  alt="React-Router-Dom"
+                  className={styles.techIcon}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.projectShortInfo}>
+            This is a task management app in MERN, which organizes tasks into
+            to-do, ongoing and done categories. <br />
+            Features: - Create Task, Edit Task, Delete Task, User
+            Authentication, User Password hashed and stored, Login session
+            implemented using JWT (JSON Web Token).
+          </div>
+        </div>
+      </div>
+
+      {/* <hr /> */}
+
       <div className={styles.project}>
         <img
           src={lsAnimePreview}
@@ -113,7 +226,7 @@ function Projects() {
             </Link>
             (
             <Link
-              to="https://github.com/Namchi7/lsAnime"
+              to="https://docs.api.jikan.moe"
               target="_blank"
               rel="noopener noreferrer"
             >

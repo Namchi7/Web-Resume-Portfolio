@@ -127,13 +127,14 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
 
-hr {
+.skillSet > hr {
   height: 2rem;
+  height: 70%;
   width: 1px;
   border: none;
   border-radius: 2px;
@@ -141,9 +142,35 @@ hr {
   background-color: rgb(96, 96, 96);
 }
 
+.skillIcons {
+  /* height: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skillIconsRow {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .skillIconContainer {
   position: relative;
   overflow: visible;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
+}
+.skillIconContainer:nth-child(3) {
+  filter: drop-shadow(0 0 2px #fff);
 }
 
 .skillIconContainer:hover::after {
@@ -163,17 +190,10 @@ hr {
   font-weight: 400;
 }
 
-.skillIcons {
-  height: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-}
-
 .skillIcon {
   position: relative;
-  height: 2rem;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
 }
 
 .downloadContainer {
@@ -271,8 +291,9 @@ hr {
   height: auto;
   width: 50%;
   aspect-ratio: 12/8;
-  background-color: aliceblue;
-  box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
+  background-color: transparent;
+  /* box-shadow: 0 0 10px rgba(63, 166, 255, 0.25); */
+  filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
   border-radius: 0.5rem;
 }
 

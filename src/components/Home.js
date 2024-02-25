@@ -9,19 +9,23 @@ import htmlIcon from "../assets/images/HTML5.svg";
 import cssIcon from "../assets/images/CSS3.svg";
 import jsIcon from "../assets/images/JavaScript.svg";
 import reactIcon from "../assets/images/ReactJs.svg";
+import nodeIcon from "../assets/images/NodeJs.svg";
+import expressIcon from "../assets/images/ExpressJs.svg";
+import mongoDBIcon from "../assets/images/MongoDB.svg";
+import jwtIcon from "../assets/images/JWT.svg";
 import figmaIcon from "../assets/images/Figma.svg";
 import downloadIcon from "../assets/images/Download.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 import lsAnime from "../assets/images/Compressed/lsAnime.png";
-import countriesImg from "../assets/images/Compressed/countries.png";
+import taskItImg from "../assets/images/Compressed/taskit.png";
 import aboutImg from "../assets/images/Compressed/about.png";
 import openLinkIcon from "../assets/images/Open-Link-White.svg";
 // import openLinkIcon from "../assets/images/Open-Link.svg";
 import githubIcon from "../assets/images/github.svg";
 // import githubIcon from "../assets/images/Github-Black.svg";
 import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
-import countriesPreview from "../assets/images/countries preview 600px.png";
+import taskItPreview from "../assets/images/taskit preview 600px.png";
 import aboutPreview from "../assets/images/About Page preview.png";
 
 function Home() {
@@ -70,26 +74,70 @@ function Home() {
           <hr />
 
           <div className={styles.skillIcons}>
-            <div className={styles.skillIconContainer} data-skill-name="HTML5">
-              <img src={htmlIcon} alt="HTML5" className={styles.skillIcon} />
+            <div className={styles.skillIconsRow}>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="ReactJs"
+              >
+                <img
+                  src={reactIcon}
+                  alt="ReactJs"
+                  className={styles.skillIcon}
+                />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="NodeJs"
+              >
+                <img src={nodeIcon} alt="NodeJs" className={styles.skillIcon} />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="ExpressJs"
+              >
+                <img
+                  src={expressIcon}
+                  alt="ExpressJs"
+                  className={styles.skillIcon}
+                />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="MongoDB"
+              >
+                <img
+                  src={mongoDBIcon}
+                  alt="MongoDB"
+                  className={styles.skillIcon}
+                />
+              </div>
             </div>
-            <div className={styles.skillIconContainer} data-skill-name="CSS3">
-              <img src={cssIcon} alt="CSS3" className={styles.skillIcon} />
-            </div>
-            <div
-              className={styles.skillIconContainer}
-              data-skill-name="JavaScript"
-            >
-              <img src={jsIcon} alt="JavaScript" className={styles.skillIcon} />
-            </div>
-            <div
-              className={styles.skillIconContainer}
-              data-skill-name="ReactJs"
-            >
-              <img src={reactIcon} alt="ReactJs" className={styles.skillIcon} />
-            </div>
-            <div className={styles.skillIconContainer} data-skill-name="Figma">
-              <img src={figmaIcon} alt="Figma" className={styles.skillIcon} />
+            <div className={styles.skillIconsRow}>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="JavaScript"
+              >
+                <img
+                  src={jsIcon}
+                  alt="JavaScript"
+                  className={styles.skillIcon}
+                />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="HTML5"
+              >
+                <img src={htmlIcon} alt="HTML5" className={styles.skillIcon} />
+              </div>
+              <div className={styles.skillIconContainer} data-skill-name="CSS3">
+                <img src={cssIcon} alt="CSS3" className={styles.skillIcon} />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="Figma"
+              >
+                <img src={figmaIcon} alt="Figma" className={styles.skillIcon} />
+              </div>
             </div>
           </div>
 
@@ -200,41 +248,41 @@ function Home() {
 
         <div className={styles.project}>
           <img
-            style={{
-              background: `url(${countriesImg})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-            src={countriesPreview}
-            alt="Countries Preview"
+            // style={{
+            //   background: `url(${taskItImg})`,
+            //   backgroundPosition: "center",
+            //   backgroundRepeat: "no-repeat",
+            //   backgroundSize: "cover",
+            // }}
+            src={taskItPreview}
+            alt="TaskIt Preview"
             className={styles.previewImg}
           />
 
           <div className={styles.projectInfo}>
-            <div className={styles.projectTitle}>Countries</div>
+            <div className={styles.projectTitle}>TaskIt</div>
             <div className={styles.projectLinks}>
               <Link
-                to="https://countriesaman.netlify.app"
+                to="https://taskit0.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.siteLinkContainer}
               >
                 <img
                   src={openLinkIcon}
-                  alt="lsAnime"
+                  alt="TaskIt"
                   className={styles.siteLink}
                 />
               </Link>
               <Link
-                to="https://github.com/Namchi7/Countries"
+                to="https://github.com/Namchi7/taskit"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.siteLinkContainer}
               >
                 <img
                   src={githubIcon}
-                  alt="Github/lsAnime"
+                  alt="Github/taskit"
                   className={styles.siteLink}
                 />
               </Link>
@@ -252,6 +300,40 @@ function Home() {
                     alt="ReactJs"
                     className={styles.techIcon}
                   />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="NodeJs"
+                >
+                  <img
+                    src={nodeIcon}
+                    alt="NodeJs"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  style={{ filter: "drop-shadow(0 0 3px #fff)" }}
+                  className={styles.techIconContainer}
+                  data-tech-name="ExpressJs"
+                >
+                  <img
+                    src={expressIcon}
+                    alt="ExpressJs"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="MongoDB"
+                >
+                  <img
+                    src={mongoDBIcon}
+                    alt="MongoDB"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div className={styles.techIconContainer} data-tech-name="JWT">
+                  <img src={jwtIcon} alt="JWT" className={styles.techIcon} />
                 </div>
                 <div
                   className={styles.techIconContainer}
