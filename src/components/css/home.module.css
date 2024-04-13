@@ -168,12 +168,28 @@
   align-items: center;
   justify-content: center;
   filter: drop-shadow(0 0 10px rgba(63, 166, 255, 0.25));
-}
-.skillIconsRow:nth-child(1) .skillIconContainer:nth-child(3) {
-  filter: drop-shadow(0 0 2px #fff);
+  z-index: 8;
 }
 
-.skillIconContainer:hover::after {
+.skillIconsRow:nth-child(1) .skillIconContainer:hover::after {
+  width: max-content;
+  content: attr(data-skill-name);
+  position: absolute;
+  bottom: 110%;
+  left: 0;
+  transform: translateX(-25%);
+  margin-top: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  color: white;
+  background-color: #333;
+  font-size: 0.7rem;
+  font-weight: 400;
+  z-index: 10;
+}
+
+.skillIconsRow:nth-child(2) .skillIconContainer:hover::before {
   width: max-content;
   content: attr(data-skill-name);
   position: absolute;
@@ -188,6 +204,7 @@
   background-color: #333;
   font-size: 0.7rem;
   font-weight: 400;
+  z-index: 10;
 }
 
 .skillIcon {
@@ -331,6 +348,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .techIcons {
@@ -343,6 +361,17 @@
 .techIconContainer {
   position: relative;
   overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.expressIcon {
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .techIconContainer:hover::after {
@@ -351,6 +380,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  transform: translateX(-25%);
   margin-top: 0.5rem;
   padding: 0.2rem 0.5rem;
   border: 1px solid black;
@@ -361,13 +391,14 @@
 }
 
 .techIcon {
-  height: 1.15rem;
+  height: 100%;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
 }
 
 .briefInfo {
   width: 100%;
   white-space: break-spaces;
+  font-size: 0.9rem;
 }
 
 .projectsBtn {

@@ -12,19 +12,21 @@ import reactIcon from "../assets/images/ReactJs.svg";
 import nodeIcon from "../assets/images/NodeJs.svg";
 import expressIcon from "../assets/images/ExpressJs.svg";
 import mongoDBIcon from "../assets/images/MongoDB.svg";
+import socketIOIcon from "../assets/images/socket-dot-io.svg";
+import tailwindCSSIcon from "../assets/images/Tailwind-css.svg";
+import typescriptIcon from "../assets/images/typescript.svg";
 import jwtIcon from "../assets/images/JWT.svg";
 import figmaIcon from "../assets/images/Figma.svg";
 import downloadIcon from "../assets/images/Download.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
-import lsAnime from "../assets/images/Compressed/lsAnime.png";
-import taskItImg from "../assets/images/Compressed/taskit.png";
 import aboutImg from "../assets/images/Compressed/about.png";
 import openLinkIcon from "../assets/images/Open-Link-White.svg";
 // import openLinkIcon from "../assets/images/Open-Link.svg";
 import githubIcon from "../assets/images/github.svg";
 // import githubIcon from "../assets/images/Github-Black.svg";
-import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
+
+import vartaPreview from "../assets/images/Varta Preview 600px.png";
 import taskItPreview from "../assets/images/taskit preview 600px.png";
 import aboutPreview from "../assets/images/About Page preview.png";
 
@@ -92,7 +94,7 @@ function Home() {
                 <img src={nodeIcon} alt="NodeJs" className={styles.skillIcon} />
               </div>
               <div
-                className={styles.skillIconContainer}
+                className={`${styles.skillIconContainer} ${styles.expressIcon}`}
                 data-skill-name="ExpressJs"
               >
                 <img
@@ -111,8 +113,6 @@ function Home() {
                   className={styles.skillIcon}
                 />
               </div>
-            </div>
-            <div className={styles.skillIconsRow}>
               <div
                 className={styles.skillIconContainer}
                 data-skill-name="JavaScript"
@@ -120,6 +120,38 @@ function Home() {
                 <img
                   src={jsIcon}
                   alt="JavaScript"
+                  className={styles.skillIcon}
+                />
+              </div>
+            </div>
+            <div className={styles.skillIconsRow}>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="TypeScript"
+              >
+                <img
+                  src={typescriptIcon}
+                  alt="TypeScript"
+                  className={styles.skillIcon}
+                />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="Tailwind CSS"
+              >
+                <img
+                  src={tailwindCSSIcon}
+                  alt="Tailwind CSS"
+                  className={styles.skillIcon}
+                />
+              </div>
+              <div
+                className={styles.skillIconContainer}
+                data-skill-name="Socket.IO"
+              >
+                <img
+                  src={socketIOIcon}
+                  alt="Socket.IO"
                   className={styles.skillIcon}
                 />
               </div>
@@ -164,41 +196,35 @@ function Home() {
 
         <div className={styles.project}>
           <img
-            style={{
-              background: `url(${lsAnime})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-            src={lsAnimePreview}
-            alt="lsAnime Preview"
+            src={vartaPreview}
+            alt="Varta Preview"
             className={styles.previewImg}
           />
 
           <div className={styles.projectInfo}>
-            <div className={styles.projectTitle}>lsAnime</div>
+            <div className={styles.projectTitle}>Varta - ChatApp</div>
             <div className={styles.projectLinks}>
               <Link
-                to="https://lsanime.netlify.app"
+                to="https://varta-chatapp.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.siteLinkContainer}
               >
                 <img
                   src={openLinkIcon}
-                  alt="lsAnime"
+                  alt="Varta - ChatApp"
                   className={styles.siteLink}
                 />
               </Link>
               <Link
-                to="https://github.com/Namchi7/lsAnime"
+                to="https://github.com/Namchi7/varta-chatapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.siteLinkContainer}
               >
                 <img
                   src={githubIcon}
-                  alt="Github/lsAnime"
+                  alt="Github/varta"
                   className={styles.siteLink}
                 />
               </Link>
@@ -215,6 +241,69 @@ function Home() {
                     alt="ReactJs"
                     className={styles.techIcon}
                   />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="NodeJs"
+                >
+                  <img
+                    src={nodeIcon}
+                    alt="NodeJs"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={`${styles.techIconContainer} ${styles.expressIcon}`}
+                  data-tech-name="ExpressJs"
+                >
+                  <img
+                    src={expressIcon}
+                    alt="ExpressJs"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="MongoDB"
+                >
+                  <img
+                    src={mongoDBIcon}
+                    alt="MongoDB"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="TypeScript"
+                >
+                  <img
+                    src={typescriptIcon}
+                    alt="TypeScript"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="Tailwind CSS"
+                >
+                  <img
+                    src={tailwindCSSIcon}
+                    alt="Tailwind CSS"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div
+                  className={styles.techIconContainer}
+                  data-tech-name="Socket.IO"
+                >
+                  <img
+                    src={socketIOIcon}
+                    alt="Socket.IO"
+                    className={styles.techIcon}
+                  />
+                </div>
+                <div className={styles.techIconContainer} data-tech-name="JWT">
+                  <img src={jwtIcon} alt="JWT" className={styles.techIcon} />
                 </div>
                 <div
                   className={styles.techIconContainer}
@@ -239,7 +328,12 @@ function Home() {
               </div>
             </div>
             <div className={styles.briefInfo}>
-              Get information about your favorite animes.
+              This is a Chat App in MERN, Tailwind CSS and TypeScript, which
+              connects you with other users in real-time <br />
+              Features: - Chat in real-time using Socket.IO <br />
+              User Authentication, <br />
+              User Password hashed and stored, <br />
+              Login session implemented using JWT (JSON Web Token).
             </div>
           </div>
         </div>
@@ -248,12 +342,6 @@ function Home() {
 
         <div className={styles.project}>
           <img
-            // style={{
-            //   background: `url(${taskItImg})`,
-            //   backgroundPosition: "center",
-            //   backgroundRepeat: "no-repeat",
-            //   backgroundSize: "cover",
-            // }}
             src={taskItPreview}
             alt="TaskIt Preview"
             className={styles.previewImg}
@@ -290,6 +378,7 @@ function Home() {
 
             <div className={styles.techUsed}>
               <strong>Tech Used:</strong>
+
               <div className={styles.techIcons}>
                 <div
                   className={styles.techIconContainer}
@@ -312,8 +401,7 @@ function Home() {
                   />
                 </div>
                 <div
-                  style={{ filter: "drop-shadow(0 0 3px #fff)" }}
-                  className={styles.techIconContainer}
+                  className={`${styles.techIconContainer} ${styles.expressIcon}`}
                   data-tech-name="ExpressJs"
                 >
                   <img
@@ -358,7 +446,11 @@ function Home() {
               </div>
             </div>
             <div className={styles.briefInfo}>
-              Get information on over 200+ countries in one place.
+              This is a task management app in MERN, which organizes tasks into
+              to-do, ongoing and done categories. <br />
+              Features: - Create Task, Edit Task, Delete Task, User
+              Authentication, User Password hashed and stored, Login session
+              implemented using JWT (JSON Web Token).
             </div>
           </div>
         </div>

@@ -14,10 +14,14 @@ import reactIcon from "../assets/images/ReactJs.svg";
 import nodeIcon from "../assets/images/NodeJs.svg";
 import expressIcon from "../assets/images/ExpressJs.svg";
 import mongoDBIcon from "../assets/images/MongoDB.svg";
+import typescriptIcon from "../assets/images/typescript.svg";
+import socketIOIcon from "../assets/images/socket-dot-io.svg";
+import tailwindCSSIcon from "../assets/images/Tailwind-css.svg";
 import jwtIcon from "../assets/images/JWT.svg";
 import reduxIcon from "../assets/images/Redux-Toolkit.svg";
 import reactRouterIcon from "../assets/images/React-Router-Dom.svg";
 
+import vartaPreview from "../assets/images/Varta Preview 600px.png";
 import taskItPreview from "../assets/images/taskit preview 600px.png";
 import lsAnimePreview from "../assets/images/lsAnime preview 600px.png";
 import countriesPreview from "../assets/images/countries preview 600px.png";
@@ -35,6 +39,151 @@ function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>PROJECTS</div>
+
+      <div className={styles.project}>
+        <img
+          src={vartaPreview}
+          alt="Varta Preview"
+          className={styles.projectImg}
+        />
+
+        <div className={styles.projectInfo}>
+          <div className={styles.projectTitle}>Varta - ChatApp</div>
+          <div className={styles.projectLinks}>
+            <Link
+              to="https://varta-chatapp.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={openLinkIcon}
+                alt="Varta - ChatApp"
+                className={styles.siteLink}
+              />
+            </Link>
+            <Link
+              to="https://github.com/Namchi7/varta-chatapp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.siteLinkContainer}
+            >
+              <img
+                src={githubIcon}
+                alt="Github/varta"
+                className={styles.siteLink}
+              />
+            </Link>
+          </div>
+          <div className={styles.techUsed}>
+            <strong>Tech Used:</strong>
+
+            <div className={styles.techIcons}>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="ReactJs"
+              >
+                <img
+                  src={reactIcon}
+                  alt="ReactJs"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div className={styles.techIconContainer} data-tech-name="NodeJs">
+                <img src={nodeIcon} alt="NodeJs" className={styles.techIcon} />
+              </div>
+              <div
+                className={`${styles.techIconContainer} ${styles.expressIcon}`}
+                data-tech-name="ExpressJs"
+              >
+                <img
+                  src={expressIcon}
+                  alt="ExpressJs"
+                  className={styles.techIcon}
+                />
+              </div>
+
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="MongoDB"
+              >
+                <img
+                  src={mongoDBIcon}
+                  alt="MongoDB"
+                  className={styles.techIcon}
+                />
+              </div>
+
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="TypeScript"
+              >
+                <img
+                  src={typescriptIcon}
+                  alt="TypeScript"
+                  className={styles.techIcon}
+                />
+              </div>
+
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Tailwind CSS"
+              >
+                <img
+                  src={tailwindCSSIcon}
+                  alt="Tailwind CSS"
+                  className={styles.techIcon}
+                />
+              </div>
+
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Socket.IO"
+              >
+                <img
+                  src={socketIOIcon}
+                  alt="Socket.IO"
+                  className={styles.techIcon}
+                />
+              </div>
+
+              <div className={styles.techIconContainer} data-tech-name="JWT">
+                <img src={jwtIcon} alt="JWT" className={styles.techIcon} />
+              </div>
+
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Redux-Toolkit"
+              >
+                <img
+                  src={reduxIcon}
+                  alt="Redux-Toolkit"
+                  className={styles.techIcon}
+                />
+              </div>
+              <div
+                className={styles.techIconContainer}
+                data-tech-name="Redux-Router-Dom"
+              >
+                <img
+                  src={reactRouterIcon}
+                  alt="React-Router-Dom"
+                  className={styles.techIcon}
+                />
+              </div>
+            </div>
+          </div>
+          <div className={styles.projectShortInfo}>
+            This is a Chat App in MERN, Tailwind CSS and TypeScript, which
+            connects you with other users in real-time <br />
+            Features: - Chat in real-time using Socket.IO <br />
+            User Authentication, <br />
+            User Password hashed and stored, <br />
+            Login session implemented using JWT (JSON Web Token).
+          </div>
+        </div>
+      </div>
+
       <div className={styles.project}>
         <img
           src={taskItPreview}
@@ -87,7 +236,7 @@ function Projects() {
                 <img src={nodeIcon} alt="NodeJs" className={styles.techIcon} />
               </div>
               <div
-                className={styles.techIconContainer}
+                className={`${styles.techIconContainer} ${styles.expressIcon}`}
                 data-tech-name="ExpressJs"
               >
                 <img

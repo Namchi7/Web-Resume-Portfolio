@@ -110,6 +110,11 @@
 .techIconContainer {
   position: relative;
   overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
 }
 
 .techIconContainer:hover::after {
@@ -127,14 +132,25 @@
   font-size: 0.7rem;
 }
 
+.expressIcon {
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
 .techIcon {
-  height: 1.15rem;
+  height: 100%;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1));
 }
 
+.techIconContainer:nth-child(5) .techIcon {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
 .projectShortInfo {
   width: 100%;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 700px) {
