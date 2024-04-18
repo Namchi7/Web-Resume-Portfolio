@@ -32,6 +32,7 @@ function Experience() {
                 <strong>Duration:</strong> July 2021 - May 2022 (10 Months)
               </div>
             </div>
+
             <img
               src={HighRadius}
               alt="HighRadius"

@@ -1,6 +1,6 @@
 .container {
   width: 95%;
-  max-width: 65rem;
+  max-width: var(--max-app-width);
   min-height: calc(100vh - 13rem);
   display: flex;
   flex-direction: column;
@@ -96,12 +96,17 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
+}
+
+.techUsedText {
+  white-space: nowrap;
 }
 
 .techIcons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;

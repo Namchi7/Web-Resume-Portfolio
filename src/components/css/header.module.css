@@ -8,13 +8,14 @@
   align-items: center;
   color: #333;
   background-color: var(--dark-headerbg-color);
+  backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgba(63, 166, 255, 0.25);
   z-index: 12;
 }
 
 .subContainer {
   width: 95%;
-  /* max-width: 80rem; */
+  max-width: var(--max-app-width);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;

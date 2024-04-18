@@ -49,8 +49,8 @@ function Home() {
             <h1 className={styles.name}>Aman Kumar</h1>
 
             <div className={styles.roles}>
-              <div className={styles.role}>Front-End Developer</div>
-              <div className={styles.role}>Cybersecurity Enthusiast</div>
+              <div className={styles.role}>FrontEnd ~ Full Stack Developer</div>
+              {/* <div className={styles.role}>Cybersecurity Enthusiast</div> */}
             </div>
           </div>
 
@@ -230,7 +230,7 @@ function Home() {
               </Link>
             </div>
             <div className={styles.techUsed}>
-              <strong>Tech Used:</strong>
+              <strong className={styles.techUsedText}>Tech Used:</strong>
               <div className={styles.techIcons}>
                 <div
                   className={styles.techIconContainer}
@@ -377,7 +377,7 @@ function Home() {
             </div>
 
             <div className={styles.techUsed}>
-              <strong>Tech Used:</strong>
+              <strong className={styles.techUsedText}>Tech Used:</strong>
 
               <div className={styles.techIcons}>
                 <div

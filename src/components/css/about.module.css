@@ -1,6 +1,6 @@
 .container {
   width: 95%;
-  max-width: 65rem;
+  max-width: var(--max-app-width);
   min-height: calc(100vh - 13.8rem);
   display: flex;
   flex-direction: column;

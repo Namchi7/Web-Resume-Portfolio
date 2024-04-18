@@ -1,11 +1,12 @@
 .container {
   width: 95%;
-  max-width: 65rem;
+  max-width: var(--max-app-width);
   min-height: calc(100vh - 13rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
 }
 
 .heading {
@@ -14,7 +15,7 @@
   text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .experience {
@@ -25,6 +26,8 @@
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.9rem;
+  border-left: 2px solid rgba(255, 51, 51, 0.75);
+  padding-left: 8px;
 }
 
 .xpHeading {
@@ -206,5 +209,20 @@ li {
   .learnList,
   .skillList {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .xpShortInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .companyLogo {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
   }
 }

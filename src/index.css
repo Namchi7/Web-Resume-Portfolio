@@ -11,6 +11,9 @@ body {
 }
 
 :root {
+  --max-app-width: 65rem;
+
+  /* Light mode colors */
   --light-text-color: #000;
   --light-headerbg-color: #acfcee;
   --light-body-color: #fff;

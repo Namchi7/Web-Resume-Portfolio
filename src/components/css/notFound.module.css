@@ -1,33 +1,33 @@
 .container {
-    width: 95%;
-    max-width: 65rem;
-    min-height: calc(100vh - 13.3rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
+  width: 95%;
+  max-width: var(--max-app-width);
+  min-height: calc(100vh - 13.3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
 }
 
 .homepageBtn {
-    padding: 1rem;
-    background-color: rgb(49, 203, 250);
-    border-radius: 10px;
-    font-family: 'Segoe UI';
-    font-weight: 600;
-    color: #f5f5f5;
-    cursor: pointer;
+  padding: 1rem;
+  background-color: rgb(49, 203, 250);
+  border-radius: 10px;
+  font-family: "Segoe UI";
+  font-weight: 600;
+  color: #f5f5f5;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgb(92, 217, 255);
-    }
+  &:hover {
+    background-color: rgb(92, 217, 255);
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .container {
-        min-height: calc(100vh - 21.5rem);
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+  .container {
+    min-height: calc(100vh - 21.5rem);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }

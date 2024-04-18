@@ -76,7 +76,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
 
             <div className={styles.techIcons}>
               <div
@@ -220,7 +220,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
             <div className={styles.techIcons}>
               <div
                 className={styles.techIconContainer}
@@ -328,7 +328,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
             <div className={styles.techIcons}>
               <div
                 className={styles.techIconContainer}
@@ -423,7 +423,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
             <div className={styles.techIcons}>
               <div
                 className={styles.techIconContainer}
@@ -501,7 +501,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
             <div className={styles.techIcons}>
               <div className={styles.techIconContainer} data-tech-name="HTML">
                 <img src={htmlIcon} alt="HTML" className={styles.techIcon} />
@@ -566,7 +566,7 @@ function Projects() {
             </Link>
           </div>
           <div className={styles.techUsed}>
-            <strong>Tech Used:</strong>
+            <strong className={styles.techUsedText}>Tech Used:</strong>
             <div className={styles.techIcons}>
               <div className={styles.techIconContainer} data-tech-name="HTML">
                 <img src={htmlIcon} alt="HTML" className={styles.techIcon} />
